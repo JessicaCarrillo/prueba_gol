@@ -24,10 +24,13 @@ def movetriangle(event):
         canvas.move(1, -3, 0)
         x=x-3
         print(x)
+        if(x<700):
+            print("gol")
     else:
         canvas.move(1, 3, 0)
         x=x+3
         print(x)
+       
 canvas.bind_all('<KeyPress-Up>', movetriangle)
 canvas.bind_all('<KeyPress-Down>', movetriangle)
 canvas.bind_all('<KeyPress-Left>', movetriangle)
